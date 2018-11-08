@@ -4,15 +4,19 @@ function aleatorio() {
  if(!salto)
      salto=1;
  var maximo = parseInt(document.getElementById("max").value);
-  
- minimo= minimo/salto;
- maximo= Math.trunc(maximo/salto);
-    var result = (Math.floor(Math.random() * (maximo - minimo + 1) ) + minimo)*salto;
-        if(!result){
-            document.getElementById("result").innerText = "ingrese valores";
-        }else{
+ if(minimo > maximo){
+   minimo= minimo/salto;
+   maximo= Math.trunc(maximo/salto);
+      var result = (Math.floor(Math.random() * (maximo - minimo + 1) ) + minimo)*salto;
+          if(!result){
+              document.getElementById("result").innerText = "ingrese valores";
+          }else{
 
-            document.getElementById("result").innerText = result;
-        }
+              document.getElementById("result").innerText = result;
+          }
+ }else{
+ 
+  document.getElementById("result").innerText = "el minimo no pede se mayor que maximo";
+ }
     
 }
