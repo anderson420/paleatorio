@@ -11,7 +11,7 @@ function aleatorio() {
            if(minimo > maximo){
               
  
-               alert("el min no puede ser mayor que max");
+               alert("el minimo no puede ser mayor que el maximo");
             }else{
 
                if(!result){
