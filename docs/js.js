@@ -16,7 +16,7 @@ function aleatorio() {
           }
  }else{
  
-  document.getElementById("result").innerText = "el minimo no pede se mayor que maximo";
+  document.getElementById("result").innerText = "el minimo no puede se mayor que maximo";
  }
     
 }
